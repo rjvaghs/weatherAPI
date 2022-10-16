@@ -14,10 +14,8 @@ def hello():
 def index():
     #Get the geo-city entity from the dialogflow fullfilment request.
     body = request.json
-    city= body['queryResult']['parameters']['geo-city']
-    
-    # Uncomment the next 2 lines  if you want to use a simple hard coded random reply.
-    # temperature = str(random.randint(-20,35))
+    city= body['queryResult']['parameters']['city']
+
     # reply = '{"fulfillmentMessages": [ {"text": {"text": ["The  temperature in '+ city +", "+ country +' it is ' + temperature + '"] } } ]}'
 
     # To openweather and return a real forcast note you will need to 
