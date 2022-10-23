@@ -14,7 +14,7 @@ def hello():
 def index():
     #Get the geo-city entity from the dialogflow fullfilment request.
     body = request.json
-    city= body['queryResult']['parameters']['city']
+    city= body['queryResult']['parameters']['geo-city']
 
     # reply = '{"fulfillmentMessages": [ {"text": {"text": ["The  temperature in '+ city +", "+ country +' it is ' + temperature + '"] } } ]}'
 
